@@ -15,7 +15,7 @@ If your final build depends on bundled precompiled libraries, also place them in
 
 Use after publishing this folder to the root of the distribution repository:
 
-`https://github.com/GameBooom/GameBooom-Unity-Plugin.git#v0.1.1`
+`https://github.com/GameBooom/GameBooom-Unity-Plugin.git#v0.1.2`
 
 ## Notes
 
