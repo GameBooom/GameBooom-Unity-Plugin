@@ -47,4 +47,3 @@ If installed from Git, update by changing the git tag or branch in `Packages/man
 ## Support
 
 - Website: `https://gamebooom.ai`
-- Backend / account: `https://gameboom.wenuts.top`
