@@ -1,0 +1,23 @@
+{
+  "name": "com.gamebooom.editor",
+  "version": "0.1.0",
+  "displayName": "GameBooom",
+  "description": "AI-powered game development assistant for Unity Editor. Chat with AI to build scenes, write scripts, create animations, and more.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "author": {
+    "name": "GameBooom",
+    "url": "https://gamebooom.ai"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "assistant",
+    "gamedev",
+    "mcp"
+  ],
+  "type": "tool"
+}
