@@ -1,24 +1,50 @@
-# GameBooom Unity Plugin (Commercial DLL Distribution)
+# GameBooom for Unity
 
-This folder is a staging template for the commercial Git-installable Unity Package.
+GameBooom is an AI-powered assistant built directly into the Unity Editor. It helps you build scenes, edit scripts, work with UI, run tool-driven workflows, and validate results without leaving Unity.
 
-## Required before publish
+## Requirements
 
-Place the obfuscated distribution binaries into:
+- Unity `2022.3+`
+- Internet access for AI features
+- A GameBooom account for commercial services
 
-- `Editor/DLL/GameBooom.Editor.dll`
-- `Editor/DLL/GameBooom.Editor.dll.meta`
+## Install via Git URL
 
-If your final build depends on bundled precompiled libraries, also place them into `Editor/DLL/` with matching `.meta` files.
+Open Unity Package Manager:
 
-## Git install URL
+- `Window -> Package Manager`
+- Click `+`
+- Select `Add package from git URL...`
 
-Use after publishing this folder to the root of the distribution repository:
+Use:
 
 `https://github.com/GameBooom/GameBooom-Unity-Plugin.git#v0.1.2`
 
-## Notes
+You can also track the latest branch version with:
 
-- Do not include Unity project folders such as `Library/`, `Temp/`, `Logs/`, `ProjectSettings/`, or source `.cs` files.
-- Keep Unity `.meta` files for every distributed asset and DLL.
-- Keep `package.json`, `Editor/GameBooom.Editor.asmdef`, and runtime resources in the repository root.
+`https://github.com/GameBooom/GameBooom-Unity-Plugin.git#main`
+
+## What It Does
+
+- Chat with an AI assistant inside Unity
+- Create and modify GameObjects, components, assets, UI, and scenes
+- Generate and patch C# scripts
+- Run workflow tools for prototyping, validation, and debugging
+- Connect compatible external model providers
+
+## First Run
+
+After installation:
+
+- Open `GameBooom -> Toggle Window`
+- Sign in
+- Start a conversation in the editor
+
+## Updating
+
+If installed from Git, update by changing the git tag or branch in `Packages/manifest.json`, or use the built-in update flow when available.
+
+## Support
+
+- Website: `https://gamebooom.ai`
+- Backend / account: `https://gameboom.wenuts.top`
