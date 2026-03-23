@@ -18,7 +18,7 @@ Open Unity Package Manager:
 
 Use:
 
-`https://github.com/GameBooom/GameBooom-Unity-Plugin.git#v0.1.4`
+`https://github.com/GameBooom/GameBooom-Unity-Plugin.git#v0.1.5`
 
 You can also track the latest branch version with:
 
