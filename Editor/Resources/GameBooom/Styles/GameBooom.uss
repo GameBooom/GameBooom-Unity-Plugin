@@ -1,5 +1,54 @@
 /* GameBooom Editor Chat Styles */
 
+/* ========== Shared Window Styles ========== */
+
+.gamebooom-window-root {
+    flex-grow: 1;
+    background-color: rgb(56, 56, 56);
+}
+
+.gamebooom-window-content {
+    flex-grow: 1;
+    padding: 12px;
+}
+
+.gamebooom-surface-card {
+    background-color: rgb(31, 33, 38);
+    border-width: 1px;
+    border-color: rgb(51, 56, 64);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.gamebooom-toolbar-card {
+    min-height: 40px;
+}
+
+.gamebooom-view-title {
+    color: rgb(224, 230, 242);
+    margin-bottom: 4px;
+}
+
+.gamebooom-view-subtitle {
+    color: rgb(158, 171, 189);
+    margin-bottom: 12px;
+    white-space: normal;
+}
+
+.gamebooom-section-title {
+    color: rgb(219, 224, 235);
+    margin-bottom: 6px;
+}
+
+.gamebooom-muted-label {
+    color: rgb(158, 171, 189);
+    white-space: normal;
+}
+
+.gamebooom-status-text {
+    white-space: normal;
+}
+
 /* ========== Root & Chat Container ========== */
 
 .gamebooom-chat-root {
@@ -11,14 +60,14 @@
 
 .gamebooom-messages-scroll {
     flex-grow: 1;
-    background-color: rgb(30, 30, 30);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    background-color: rgb(24, 26, 30);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 10px 10px 8px 10px;
+    padding: 12px 12px 10px 12px;
     border-width: 1px;
-    border-color: rgb(50, 50, 50);
+    border-color: rgb(42, 45, 52);
     border-bottom-width: 0;
 }
 
@@ -26,31 +75,31 @@
 
 .gamebooom-message {
     margin-bottom: 10px;
-    padding: 8px 10px;
-    border-radius: 6px;
-    border-left-width: 3px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border-left-width: 2px;
 }
 
 .gamebooom-message:hover {
-    border-left-width: 4px;
+    border-left-width: 3px;
 }
 
 .gamebooom-message-user {
-    background-color: rgb(45, 75, 115);
-    border-left-color: rgb(80, 150, 255);
+    background-color: rgb(32, 46, 68);
+    border-left-color: rgb(107, 161, 235);
 }
 
 .gamebooom-message-user:hover {
-    background-color: rgb(50, 82, 125);
+    background-color: rgb(36, 52, 77);
 }
 
 .gamebooom-message-assistant {
-    background-color: rgb(48, 48, 48);
-    border-left-color: rgb(90, 200, 90);
+    background-color: rgb(38, 40, 45);
+    border-left-color: rgb(108, 214, 122);
 }
 
 .gamebooom-message-assistant:hover {
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(42, 45, 50);
 }
 
 .gamebooom-message-system {
@@ -93,12 +142,12 @@
 
 .gamebooom-copy-button {
     font-size: 9px;
-    height: 16px;
-    padding: 0 5px;
+    height: 20px;
+    padding: 0 8px;
     margin-left: 4px;
-    background-color: rgba(255, 255, 255, 0.06);
-    color: rgb(140, 140, 140);
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgb(150, 154, 162);
+    border-radius: 999px;
     border-width: 0;
 }
 
@@ -135,11 +184,11 @@
 
 .gamebooom-token-usage {
     font-size: 10px;
-    color: rgb(110, 110, 110);
-    margin-top: 4px;
-    padding-top: 3px;
+    color: rgb(118, 122, 130);
+    margin-top: 6px;
+    padding-top: 5px;
     border-top-width: 1px;
-    border-top-color: rgb(55, 55, 55);
+    border-top-color: rgb(58, 61, 68);
     -unity-font-style: italic;
 }
 
@@ -149,15 +198,15 @@
     flex-direction: column;
     margin-top: 6px;
     margin-bottom: 2px;
-    padding: 6px 8px;
-    background-color: rgb(38, 48, 66);
-    border-radius: 4px;
-    border-left-width: 3px;
-    border-left-color: rgb(120, 120, 220);
+    padding: 8px 10px;
+    background-color: rgb(34, 43, 60);
+    border-radius: 10px;
+    border-left-width: 2px;
+    border-left-color: rgb(124, 145, 224);
 }
 
 .gamebooom-tool-call-card:hover {
-    background-color: rgb(44, 56, 78);
+    background-color: rgb(38, 48, 68);
 }
 
 .gamebooom-tool-call-header {
@@ -169,7 +218,7 @@
     font-size: 11px;
     width: 18px;
     -unity-text-align: middle-center;
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .gamebooom-tool-call-name {
@@ -265,21 +314,44 @@
     min-height: 36px;
     max-height: 120px;
     margin-right: 4px;
+    background-color: rgb(28, 30, 35);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgb(48, 51, 59);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.gamebooom-input-field > .unity-text-field__input {
+    background-color: rgb(28, 30, 35);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    color: rgb(230, 232, 236);
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .gamebooom-send-button {
-    width: 60px;
+    width: 64px;
     min-height: 36px;
-    background-color: rgb(50, 120, 215);
-    color: rgb(255, 255, 255);
-    border-radius: 6px;
+    background-color: rgb(188, 212, 248);
+    color: rgb(18, 24, 32);
+    border-radius: 12px;
     font-size: 12px;
     -unity-font-style: bold;
     border-width: 0;
 }
 
 .gamebooom-send-button:hover {
-    background-color: rgb(65, 140, 240);
+    background-color: rgb(204, 223, 252);
 }
 
 /* ========== Status Bar ========== */
@@ -289,9 +361,9 @@
     justify-content: space-between;
     align-items: center;
     height: 22px;
-    margin-top: 3px;
+    margin-top: 6px;
     flex-shrink: 0;
-    padding: 0 2px;
+    padding: 0 4px;
 }
 
 .gamebooom-status-label {
@@ -320,13 +392,13 @@
 
 .gamebooom-tool-result-card {
     flex-direction: column;
-    margin-top: 2px;
-    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 6px;
     margin-left: 8px;
-    padding: 6px 8px;
-    background-color: rgb(32, 40, 32);
-    border-radius: 4px;
-    border-left-width: 3px;
+    padding: 8px 10px;
+    background-color: rgb(30, 37, 31);
+    border-radius: 10px;
+    border-left-width: 2px;
 }
 
 .gamebooom-tool-result-card--success {
@@ -358,10 +430,10 @@
 
 .gamebooom-tool-result-toggle {
     font-size: 9px;
-    color: rgb(140, 140, 160);
-    padding: 1px 4px;
-    border-radius: 2px;
-    background-color: rgb(50, 50, 60);
+    color: rgb(152, 156, 168);
+    padding: 2px 8px;
+    border-radius: 999px;
+    background-color: rgb(50, 52, 60);
 }
 
 .gamebooom-tool-result-toggle:hover {
@@ -451,11 +523,11 @@
     height: 36px;
     font-size: 16px;
     margin-right: 4px;
-    background-color: rgb(58, 58, 58);
-    color: rgb(180, 180, 180);
-    border-radius: 6px;
+    background-color: rgb(34, 36, 41);
+    color: rgb(190, 194, 202);
+    border-radius: 12px;
     border-width: 1px;
-    border-color: rgb(70, 70, 70);
+    border-color: rgb(48, 51, 59);
 }
 
 .gamebooom-attach-button:hover {

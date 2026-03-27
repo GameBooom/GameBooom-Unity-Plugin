@@ -50,3 +50,7 @@
 - 修复场景安全问题，在创建新场景前和进入 Play Mode 前会先保存当前场景。
 - Fixed MCP main-thread access issues by moving Unity state sampling to cached main-thread snapshots and enabling keep-alive only while requests are active.
 - 修复 MCP 的主线程访问问题，将 Unity 状态采样改为主线程缓存快照，并仅在有请求进行时启用 keep-alive。
+
+
+## 0.1.51
+- Release prepared in editor.
