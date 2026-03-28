@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.1.6
+
+### Added
+- Added structured working-memory summaries and safer context compression so long Unity sessions keep more relevant project state while reducing chat history bloat.
+- 新增结构化工作记忆摘要和更安全的上下文压缩机制，让长时间 Unity 会话在减少聊天历史膨胀的同时保留更多关键项目状态。
+- Added MCP tool export profiles (`minimal` / `default` / `full`) with clearer external tool descriptions for different client needs.
+- 新增 MCP 工具导出档位（`minimal` / `default` / `full`），并为外部客户端提供更清晰的工具描述分层。
+
+### Improved
+- Improved GameBooom UI consistency with a cleaner modernized chat/settings/MCP presentation, real message virtualization, and better large-message handling.
+- 优化 GameBooom 的整体 UI 一致性，带来更现代简洁的聊天、设置和 MCP 界面，以及真正的消息虚拟化与更好的长文本处理体验。
+- Improved MCP stability and external-client behavior by tightening tool exposure defaults, reducing duplicate write loops, and hardening main-thread request handling.
+- 优化 MCP 稳定性与外部客户端行为，收紧默认工具暴露范围，降低重复写操作循环，并加强主线程请求处理。
+
+### Fixed
+- Fixed scene tool failures on inactive objects by updating core object lookup paths used by activate/delete/rename/select/focus and related helpers.
+- 修复场景工具在未激活对象上的失效问题，更新 activate/delete/rename/select/focus 及相关辅助能力所使用的核心对象查找路径。
+- Fixed long assistant responses collapsing back to preview immediately after clicking `Render` in the chat window.
+- 修复聊天窗口中长文本助手消息点击 `Render` 后只短暂展开又立刻恢复预览的问题。
+- Fixed missing or partially invalid styles in newly installed projects by adding stylesheet loading fallbacks for both `Assets` and UPM package layouts.
+- 修复插件安装到新项目后样式表缺失或部分样式失效的问题，为 `Assets` 和 UPM package 两种布局增加样式加载兜底。
+- Fixed subscription-state flicker on plugin restart by reading cached subscription info first and only refreshing UI when backend subscription data actually changes.
+- 修复插件重启时订阅状态闪烁的问题，先读取缓存订阅信息，并仅在后端订阅数据真实变化时刷新 UI。
+
 ## 0.1.5
 
 ### Added
@@ -50,7 +74,3 @@
 - 修复场景安全问题，在创建新场景前和进入 Play Mode 前会先保存当前场景。
 - Fixed MCP main-thread access issues by moving Unity state sampling to cached main-thread snapshots and enabling keep-alive only while requests are active.
 - 修复 MCP 的主线程访问问题，将 Unity 状态采样改为主线程缓存快照，并仅在有请求进行时启用 keep-alive。
-
-
-## 0.1.51
-- Release prepared in editor.

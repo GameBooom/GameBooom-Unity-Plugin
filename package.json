@@ -1,6 +1,6 @@
 {
   "name": "com.gamebooom.editor",
-  "version": "0.1.51",
+  "version": "0.1.6",
   "displayName": "GameBooom",
   "description": "AI-powered game development assistant for Unity Editor. Chat with AI to build scenes, write scripts, create animations, and more.",
   "unity": "2022.3",
